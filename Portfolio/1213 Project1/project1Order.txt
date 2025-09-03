@@ -1,0 +1,56 @@
+import java.util.*;
+
+public class Order{
+    private int book ="";
+    private int DVD ="";
+    private int CD ="";
+    private int number = 0;
+    private boolean membership = false;
+    private String customerName = "";
+
+    public Order(int book, int DVD, int CD, boolean membership, int number, String customerName)
+    {
+        this.book = book;
+        this.DVD = book;
+        this.CD = CD;
+        this.membership = membership;
+        this.number = number;
+        this.customerName = customerName;
+    }
+
+    int getBook(){
+        return book;
+    }
+
+    void addBook(String x){
+        this.book = book + x;
+    }
+
+    int getDVD(){
+        return DVD;
+    }
+
+    void addDVD(String x){
+        this.DVD = DVD + x;
+    }
+
+    int getCD(){
+        return CD;
+    }
+
+    void addCD(String x){
+        this.CD = CD + x;
+    }
+
+    boolean getMembership(){
+        return membership;
+    }
+
+    int getNumber(){
+        return number;
+    }
+
+    String getCustomerName(){
+        return customerName;
+    }
+}
